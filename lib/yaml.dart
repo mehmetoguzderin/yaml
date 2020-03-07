@@ -2,6 +2,7 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
+import 'src/editor.dart';
 import 'src/loader.dart';
 import 'src/style.dart';
 import 'src/yaml_document.dart';
@@ -13,6 +14,11 @@ export 'src/utils.dart' show YamlWarningCallback, yamlWarningCallback;
 export 'src/yaml_document.dart';
 export 'src/yaml_exception.dart';
 export 'src/yaml_node.dart' hide setSpan;
+
+/// Edits a single document from a YAML string.
+String editYamlDocument(String yaml) {
+  return '';
+}
 
 /// Loads a single document from a YAML string.
 ///
