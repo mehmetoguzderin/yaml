@@ -16,8 +16,10 @@ export 'src/yaml_exception.dart';
 export 'src/yaml_node.dart' hide setSpan;
 
 /// Edits a single document from a YAML string.
-String editYamlDocument(String yaml) {
-  return '';
+String editYamlDocument(String yaml, dynamic edits) {
+  var editor = Editor(yaml);
+  var document = editor.edit(edits);
+  return document.toString();
 }
 
 /// Loads a single document from a YAML string.
